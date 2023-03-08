@@ -6,6 +6,10 @@
   "author": {
     "name": "Benjamin Babic"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/b-babic/vscode-sight-theme"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.76.0"
