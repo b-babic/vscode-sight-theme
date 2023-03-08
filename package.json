@@ -1,0 +1,33 @@
+{
+  "name": "sight",
+  "displayName": "Sight",
+  "description": "Distraction free monochrome theme",
+  "publisher": "b-babic",
+  "author": {
+    "name": "Benjamin Babic"
+  },
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Sight",
+        "uiTheme": "vs",
+        "path": "./themes/sight-color-theme.json"
+      },
+      {
+        "label": "Sight Night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sight-night-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "./build.py"
+  }
+}

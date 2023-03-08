@@ -1,0 +1,7 @@
+.vscode/**
+.vscode-test/**
+.gitignore
+__pycache__/**
+.mypy_cache/**
+**/*.py
+venv/**
