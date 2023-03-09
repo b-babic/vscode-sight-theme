@@ -4,30 +4,30 @@ from build import ColorSplit
 
 # Colors
 
-colorNone = ColorSplit("#001F3F").set_alpha(0)
-colorWhite = ColorSplit("#ffffff")
-colorBlack = ColorSplit("#001F3F")
-colorGrey = ColorSplit("#bec9d3", "#2e2e37")
-colorGreyStrong = ColorSplit("#6b7a88", "#a8a8b1")
-colorGreyLight = ColorSplit("#e7ecf2", "#1e1d27")
-colorGreyOnBlack = ColorSplit("#65696e", colorGrey)
+colorNone = ColorSplit("#18181b").set_alpha(0)
+colorWhite = ColorSplit("#fafafa")
+colorBlack = ColorSplit("#18181b")
+colorGrey = ColorSplit("#a1a1aa", "#52525b")
+colorGreyStrong = ColorSplit("#52525b", "#71717a")
+colorGreyLight = ColorSplit("#e4e4e7", "#3f3f46")
+colorGreyOnBlack = ColorSplit("#52525b", colorGrey)
 
-colorPurple = ColorSplit("#7d46fc")
-colorBlue = ColorSplit("#004bff")
-colorCyan = ColorSplit("#00d2ff")
-colorGreen = ColorSplit("#00ff68")
-colorYellow = ColorSplit("#ffca00")
-colorOrange = ColorSplit("#ff9900")
-colorRed = ColorSplit("#ff0032")
+colorPurple = ColorSplit("#9333ea")
+colorBlue = ColorSplit("#2563eb")
+colorCyan = ColorSplit("#0891b2")
+colorGreen = ColorSplit("#059669")
+colorYellow = ColorSplit("#ca8a04")
+colorOrange = ColorSplit("#ea580c")
+colorRed = ColorSplit("#dc2626")
 
 colorMain = ColorSplit(colorWhite, colorBlack)
 colorMainNegative = ColorSplit(colorBlack, colorWhite)
-colorMainContrast = ColorSplit("#f4f6fc", "#0a0b0f")
-colorMainContrastTransparent = ColorSplit("#99a7e1", "#616a93").set_alpha(0.1)
+colorMainContrast = ColorSplit("#f4f4f5", "#52525b")
+colorMainContrastTransparent = ColorSplit("#5b21b6", "#4c1d95").set_alpha(0.1)
 
 colorPrimary = ColorSplit(colorBlue, colorPurple)
 colorPrimaryNegative = colorWhite
-colorPrimaryHighlight = ColorSplit("#0064ff", colorPrimary).set_alpha(0.15, 0.25)
+colorPrimaryHighlight = ColorSplit("#6366f1", colorPrimary).set_alpha(0.15, 0.25)
 colorPrimaryHighlightStrong = colorPrimaryHighlight.with_alpha(0.3, 0.5)
 colorPrimaryHighlightLight = colorPrimaryHighlight.with_alpha(0.05, 0.08)
 
@@ -39,8 +39,8 @@ colorDeletedHighlight = colorDeleted.with_alpha(0.1, 0.2)
 colorError = colorRed
 colorWarning = colorOrange
 
-colorFind = colorYellow.with_alpha(0.6)
-colorFindHighlight = colorFind.with_alpha(0.3)
+colorFind = colorGreen.with_alpha(0.8)
+colorFindHighlight = colorFind.with_alpha(0.4)
 
 colorStackFocused = colorOrange.with_alpha(0.6)
 colorStack = colorOrange.with_alpha(0.3)
@@ -106,6 +106,7 @@ definitions = {
         "editorOverviewRuler.wordHighlightStrongForeground": colorPrimaryHighlightStrong,
         "editorRuler.foreground": colorMainContrast,
         "editorSuggestWidget.foreground": colorMainNegative,
+        "editorSuggestWidget.highlightForeground": colorFindHighlight,
         "editorWarning.foreground": colorWarning,
         "editorWidget.background": colorMainContrast,
         "editorWidget.border": colorBorder,
